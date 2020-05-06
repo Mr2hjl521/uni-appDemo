@@ -1,0 +1,12 @@
+{
+  "navigationBarTitleText": "预约时间",
+  "navigationBarBackgroundColor": "#FFD845",
+  "backgroundColorTop": "#ffffff",
+  "onReachBottomDistance": 50,
+  "titleNView": true,
+  "bounce": "none",
+  "usingComponents": {
+    "mpvue-picker": "/components/mpvue-picker/mpvuePicker",
+    "calendar": "/components/Calendar/Calendar"
+  }
+}

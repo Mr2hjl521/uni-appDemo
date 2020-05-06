@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "确认订单",
+  "navigationBarBackgroundColor": "#FFD845",
+  "backgroundColorTop": "#ffffff",
+  "onReachBottomDistance": 50,
+  "titleNView": true,
+  "bounce": "none",
+  "usingComponents": {}
+}

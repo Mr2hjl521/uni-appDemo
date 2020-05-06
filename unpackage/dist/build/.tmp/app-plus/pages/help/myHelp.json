@@ -1,0 +1,13 @@
+{
+  "navigationBarTitleText": "我的代取",
+  "navigationBarBackgroundColor": "#f8f8f8",
+  "backgroundColorTop": "#ffffff",
+  "onReachBottomDistance": 50,
+  "titleNView": true,
+  "bounce": "none",
+  "usingComponents": {
+    "mx-date-picker": "/components/mx-datepicker/mx-datepicker",
+    "mpvue-city-picker": "/components/mpvue-citypicker/mpvueCityPicker",
+    "xfl-select": "/components/xfl-select/xfl-select"
+  }
+}

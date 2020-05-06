@@ -1,0 +1,306 @@
+@charset "UTF-8";
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+page {
+  width: 750rpx;
+  box-sizing: border-box;
+}
+.body {
+  padding-top: 10px;
+  box-sizing: border-box;
+}
+.body .box0 {
+    width: 750rpx;
+    height: 175px;
+    text-align: center;
+    box-sizing: border-box;
+}
+.body .box0 .touxiang {
+      width: 100%;
+}
+.body .box0 .box9 {
+      text-align: center;
+}
+.body .box {
+    width: 750rpx;
+    padding: 20px;
+    padding-bottom: 10px;
+    box-sizing: border-box !important;
+    overflow: hidden;
+}
+.body .box .serviceType {
+      width: 100%;
+      margin-top: 25px;
+}
+.body .box .serviceType .servicexixi {
+        width: 45%;
+        margin: auto;
+        margin-left: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #cccccc;
+        padding-left: 5px;
+        border-radius: 5px;
+        position: relative;
+        color: #808080;
+        font-size: 16px;
+}
+.body .box .box1 {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: row;
+              flex-direction: row;
+      height: 30px;
+      line-height: 30px;
+      margin-bottom: 15px;
+      width: 750rpx;
+}
+.body .box .box1 .pt10 {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: row;
+                flex-direction: row;
+        padding: 10px 0;
+        height: 30px;
+}
+.body .box .box1 .icon {
+        width: 30px;
+        height: 30px;
+        margin-right: 5px;
+}
+.body .box .box1 .inputBox {
+        width: 62%;
+        height: 30px;
+        line-height: 30px;
+        padding-left: 10px;
+        font-size: 16px;
+}
+.body .box .box1 .groupbox {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: row;
+                flex-direction: row;
+        margin-left: 20px;
+}
+.body .box .box1 .groupbox .group {
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: flex;
+          -webkit-box-orient: horizontal;
+          -webkit-box-direction: normal;
+          -webkit-flex-direction: row;
+                  flex-direction: row;
+          margin-right: 20px;
+}
+.body .box .box1 .groupbox .group .icon {
+            width: 50px;
+            height: 50px;
+}
+.body .box .box1 .groupbox .group .option {
+            -webkit-transform: scale(0.8);
+                    transform: scale(0.8);
+            margin-top: 7px;
+}
+.body .box .mb0 {
+      margin-bottom: 0;
+}
+.body .box .cfBox {
+      dispaly: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+              justify-content: space-between;
+      margin-bottom: 15px;
+}
+.body .box .cfBox .schoolname {
+        text-align: center;
+}
+.body .box .cfBox .btn {
+        margin-top: 10px;
+}
+.body .box .cfBox .btn .school {
+          color: #8a8a8a;
+          font-size: 16px;
+          padding-left: 5px;
+}
+.body .box .cfBox .btn .school .inputbox0 {
+            font-size: 12px;
+}
+.body .box .cfBox .box_b {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: row;
+                flex-direction: row;
+        margin-top: 15px;
+        height: 24px;
+        line-height: 24px;
+}
+.body .box .cfBox .box_b .icon {
+          width: 30px;
+          height: 30px;
+          margin-right: 5px;
+}
+.body .box .cfBox .box_b .inputBox {
+          padding-left: 3px;
+          font-size: 16px;
+}
+.body .box .cfBox .box_b .inputBox2 {
+          padding-left: 3px;
+          font-size: 16px;
+          color: #8f8080;
+}
+.body .box .cfBox .box_b .inputBox3 {
+          margin-top: -2px;
+          width: 50px;
+          padding-left: 3px;
+          font-size: 15px;
+          color: #8f8080;
+          height: 22px;
+          line-height: 22px;
+}
+.body .box .cfBox .school {
+        width: 100%;
+        position: relative;
+}
+.body .box .cfBox .school .sssinput {
+          width: 145px;
+          font-size: 16px;
+          margin-bottom: 5px;
+}
+.body .box .cfBox .school .inputbox0 {
+          color: #808080;
+          font-size: 15px;
+}
+.body .box .cfBox .school .down {
+          margin-right: 10%;
+          width: 50px;
+          height: 50px;
+          position: absolute;
+          top: 0px;
+          right: -5px;
+}
+.body .box .cfBox .school .ceshi {
+          font-size: 16px;
+}
+.body .btn {
+    background-color: #f4f5f7;
+}
+.body .box3 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+            flex-direction: row;
+    margin: 10px 20px;
+}
+.body .box8 {
+    padding: 0 20px;
+}
+.body .box8 .schoolbtn {
+      background-color: #35a6e0;
+      color: #fff;
+}
+.body .box8 .schoolname {
+      text-align: center;
+}
+.body .box10 {
+    height: 100px;
+    padding: 20px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+            flex-direction: row;
+}
+.body .box10 .text {
+      height: 10px;
+      width: 62%;
+}
+.body .box5 .submit {
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #ffd845;
+    color: #fff;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 5px;
+}
+.body .box52 {
+    margin-top: 10px;
+}
+.windows {
+  width: 100%;
+  position: absolute;
+  background-color: #fff;
+  top: 30px;
+  right: 0;
+  box-sizing: border-box;
+  z-index: 999;
+  border-radius: 5px;
+  border: 1px solid #ededed;
+  border-bottom: 1px solid #fff;
+}
+.windows .xuanxiang {
+    border-bottom: 1px solid #ededed;
+    height: 35px;
+    padding: 0 5px;
+}
+.show {
+  display: block;
+}
+.unshow {
+  display: none;
+}
+.dark {
+  height: 100%;
+  width: 100%;
+  z-index: 99;
+  background-color: #000;
+  opacity: 0.5;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+

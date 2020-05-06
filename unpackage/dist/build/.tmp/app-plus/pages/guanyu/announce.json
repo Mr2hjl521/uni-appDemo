@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "特别声明",
+  "navigationBarBackgroundColor": "#f1f1f1",
+  "backgroundColorTop": "#ffffff",
+  "onReachBottomDistance": 50,
+  "titleNView": true,
+  "bounce": "none",
+  "usingComponents": {}
+}

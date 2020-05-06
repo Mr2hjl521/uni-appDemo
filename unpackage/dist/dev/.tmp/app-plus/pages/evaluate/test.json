@@ -1,0 +1,11 @@
+{
+  "navigationBarTitleText": "测试",
+  "navigationBarBackgroundColor": "#35A6E0",
+  "backgroundColorTop": "#ffffff",
+  "onReachBottomDistance": 50,
+  "titleNView": false,
+  "bounce": "none",
+  "usingComponents": {
+    "uni-rate": "/components/uni-rate/uni-rate"
+  }
+}

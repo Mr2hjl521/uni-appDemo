@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "签到",
+  "navigationBarBackgroundColor": "#f06c7a",
+  "navigationBarTextStyle": "white",
+  "bounce": "none",
+  "usingComponents": {
+    "fl-signin": "/components/fl-signin/fl-signin"
+  }
+}

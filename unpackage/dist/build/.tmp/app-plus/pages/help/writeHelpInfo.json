@@ -1,0 +1,12 @@
+{
+  "navigationBarTitleText": "填写收件人信息",
+  "navigationBarBackgroundColor": "#FFD845",
+  "onReachBottomDistance": 50,
+  "titleNView": true,
+  "bounce": "none",
+  "usingComponents": {
+    "mpvue-picker": "/components/mpvue-picker/mpvuePicker",
+    "xfl-select": "/components/xfl-select/xfl-select",
+    "mx-date-picker": "/components/mx-datepicker/mx-datepicker"
+  }
+}

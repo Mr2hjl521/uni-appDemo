@@ -1,0 +1,1 @@
+<view><view class="header"><view class="left"><image src="{{head}}" mode></image></view><view class="center"><view class="username">{{username}}</view><view class="grade">{{grade}}</view></view><view class="right"><view class="integral">{{"积分："+integral}}</view></view></view></view>

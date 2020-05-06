@@ -1,0 +1,828 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+	 {
+	  	"path": "pages/login/verificationcode",
+	  	"style": {
+	  		"navigationBarTitleText": "登录",
+	  		"navigationBarBackgroundColor":"#fff",
+	  		"navigationBarTextStyle":"black",
+	 			"h5":{
+	 				"titleNView": true
+	 			},
+	  		"app-plus": {
+	 				"titleNView": true ,//禁用原生导航栏
+	            "bounce": "none" ,//关闭窗口回弹效果
+	  			"softinputNavBar":"none"
+	          }
+	  	}
+	  },
+	    {
+	  	  	"path": "pages/tabBar/home/home",
+	  	  	"style": {
+	  	  		"navigationBarTextStyle":"black",
+	  	  		"enablePullDownRefresh": true,
+	  	  		"onReachBottomDistance":50,
+	  	  		"app-plus": {
+	  	  			"titleNView": false ,//禁用原生导航栏
+	  	  			"bounce":"none"
+	  	  		}
+	  	  	}
+	  	  },
+		{
+			"path": "pages/tabBar/category/category",
+			"style": {
+				"navigationBarTextStyle":"black",
+				"app-plus": {
+					"titleNView": false ,//禁用原生导航栏
+					"bounce":"none"
+				}
+			}
+		},
+		// 购物车
+		{
+			"path": "pages/tabBar/cart/cart",
+			"style": {
+				"enablePullDownRefresh": true,
+				"navigationBarTextStyle":"black",
+				"app-plus": {
+					"titleNView": false ,//禁用原生导航栏
+					"softinputNavBar":"none",
+					"subNVues":[{  
+						"id": "cartTitleNvue", // 唯一标识  
+						"path": "pages/tabBar/cart/subNvue/cartTitleNvue", // 页面路径  
+						"type":"navigationBar"
+					}]
+				}
+			}
+		},
+		// 验机
+		{
+			"path": "pages/tabBar/moniter/moniter",
+			"style": {
+				"enablePullDownRefresh": true,
+				"navigationBarTextStyle":"black",
+				"app-plus": {
+					"titleNView": false ,//禁用原生导航栏
+					"bounce":"none"
+				}
+			}
+		},
+		{
+			"path": "pages/tabBar/user/user",
+			"style": {
+				"enablePullDownRefresh": true,
+				"backgroundTextStyle":"light",
+				"navigationBarBackgroundColor":"#FFD845",
+				"navigationBarTextStyle":"white",
+				"app-plus": {
+					"titleNView": false //禁用原生导航栏
+					
+				}
+			}
+		},
+		// 手机详情页
+		{
+            "path" : "pages/goods/goods-list/goods-list",
+            "style" : {
+				"navigationBarTitleText" : "",
+				"enablePullDownRefresh": true,
+				"app-plus": {
+					"bounce":"none"
+				}
+			}
+        },
+		// 膜详情页
+		{
+		    "path" : "pages/goods/goods-list/screenGoods-list",
+		    "style" : {
+				"navigationBarTitleText" : "",
+				"enablePullDownRefresh": true,
+				"app-plus": {
+					"bounce":"none"
+				}
+			}
+		},
+		{
+		    "path" : "pages/goods/goods",
+		    "style" : {
+				"navigationBarTitleText" : "",
+				"navigationBarBackgroundColor":"#f1f1f1",
+				"onReachBottomDistance":50,
+				"h5":{
+					"titleNView":false
+				},
+				"app-plus": {
+					"titleNView": false ,//禁用原生导航栏
+					"bounce":"none"
+				}
+			}
+		},
+		// 手机膜商品页面
+		{
+		    "path" : "pages/goods/screenGoods",
+		    "style" : {
+				"navigationBarTitleText" : "",
+				"navigationBarBackgroundColor":"#f1f1f1",
+				"onReachBottomDistance":50,
+				"h5":{
+					"titleNView":false
+				},
+				"app-plus": {
+					"titleNView": false ,//禁用原生导航栏
+					"bounce":"none"
+				}
+			}
+		},
+		
+		// 【修改资料】
+		{
+		    "path" : "pages/user/setting/modifiedData",
+		    "style" : {
+				"navigationBarTitleText" : "编辑资料",
+				"navigationBarBackgroundColor":"#F4F4F4",
+				"onReachBottomDistance":50,
+				"h5":{
+					"titleNView":true
+				},
+				"app-plus": {
+					"titleNView": true ,//禁用原生导航栏
+					"bounce":"none"
+				}
+			}
+		},
+		// 贴膜+代取快递前判断用户是否完善信息跳转到的【完善信息】
+		{
+		    "path" : "pages/help/wanshanTwo",
+		    "style" : {
+				"navigationBarTitleText" : "完善资料",
+				"navigationBarBackgroundColor":"#F4F4F4",
+				"onReachBottomDistance":50,
+				"h5":{
+					"titleNView":true
+				},
+				"app-plus": {
+					"titleNView": true ,//禁用原生导航栏
+					"bounce":"none"
+				}
+			}
+		},
+		{
+			"path": "pages/login/register",
+			"style": {
+				"navigationBarTitleText": "注册账号",
+				"navigationBarBackgroundColor":"#fff",
+				"navigationBarTextStyle":"black",
+				"app-plus": {
+				    "bounce": "none" ,//关闭窗口回弹效果
+					"softinputNavBar":"none"
+				}
+			}
+		},
+		{
+		 	"path": "pages/login/wanshan",
+		 	"style": {
+		 		"navigationBarTitleText": "完善信息",
+		 		"navigationBarBackgroundColor":"#f4f4f4",
+		 		"navigationBarTextStyle":"black",
+					"h5":{
+						"titleNView": true
+					},
+					"app-plus": {
+						"titleNView": true ,//禁用原生导航栏
+						"bounce": "none" ,//关闭窗口回弹效果
+						"softinputNavBar":"none"
+		         }
+		 	}
+		 },
+        {
+            "path" : "pages/order/confirmation",
+            "style": {
+            	"navigationBarTitleText": "确认订单",
+				"softinputNavBar":"none"
+            }
+        }
+        ,{
+            "path" : "pages/user/order_list/order_list",
+            "style" : {
+				"navigationBarTitleText":"我的订单",
+				"navigationBarBackgroundColor":"#f8f8f8",
+				"backgroundColorTop":"#f3f3f3",
+				"backgroundColorBottom":"#ffffff"
+			}
+        },
+        {
+            "path" : "pages/user/setting/setting",
+            "style" : {
+				"navigationBarBackgroundColor":"#f8f8f8",
+				"navigationBarTitleText":"我的设置",
+				"backgroundColorTop":"#ffffff",
+				"backgroundColorBottom":"#f3f3f3"
+			}
+        },
+		{
+		    "path" : "pages/user/phone/phone",
+		    "style" : {
+				"navigationBarBackgroundColor":"#f8f8f8",
+				"navigationBarTitleText":"售后服务",
+				"backgroundColorTop":"#ffffff",
+				"backgroundColorBottom":"#f3f3f3"
+			}
+		},
+		// 服务协议
+		{
+		    "path" : "pages/user/setting/service",
+		    "style" : {
+				"navigationBarBackgroundColor":"#f8f8f8",
+				"navigationBarTitleText":"",
+				"backgroundColorTop":"#ffffff",
+				"backgroundColorBottom":"#f3f3f3"
+			}
+		},
+		// 隐私政策
+		{
+		    "path" : "pages/user/setting/privacy",
+		    "style" : {
+				"navigationBarBackgroundColor":"#f8f8f8",
+				"navigationBarTitleText":"",
+				"backgroundColorTop":"#ffffff",
+				"backgroundColorBottom":"#f3f3f3"
+			}
+		},
+		// 【账户与安全】
+		{
+		    "path" : "pages/user/setting/accountAndSecurity",
+		    "style" : {
+				"navigationBarBackgroundColor":"#f8f8f8",
+				"navigationBarTitleText":"账户与安全",
+				"backgroundColorTop":"#ffffff",
+				"backgroundColorBottom":"#f3f3f3"
+			}
+		},
+		// 【修改手机号】
+		{
+		    "path" : "pages/user/setting/editPhone",
+		    "style" : {
+				"navigationBarBackgroundColor":"#fff",
+				"navigationBarTitleText":"换绑手机",
+				"backgroundColorTop":"#ffffff",
+				"backgroundColorBottom":"#f3f3f3"
+			}
+		},
+        {
+            "path" : "pages/msg/msg",
+            "style" : {
+				"enablePullDownRefresh": true,
+				"navigationBarTitleText": "消息列表",
+				"navigationBarBackgroundColor":"#FFD845",
+				"navigationBarTextStyle":"white"
+			}
+        },
+        {
+            "path" : "pages/msg/chat/chat",
+            "style" : {
+				"navigationBarBackgroundColor":"#f2f2f2",
+				"backgroundColorTop":"#e5e5e5",
+				"backgroundColorBottom":"#e5e5e5",
+				"app-plus":{
+					"softinputNavBar":"none",
+					"bounce":"none"
+				}
+			}
+        }
+        ,{
+            "path" : "pages/user/coupon/coupon",
+            "style" : {
+				"navigationBarTitleText": "优惠券",
+				"navigationBarBackgroundColor":"#FFD845",
+				"navigationBarTextStyle":"white",
+				"app-plus":{
+					"bounce":"none"
+				}
+			}
+        }
+        ,{
+            "path" : "pages/user/keep/keep",
+            "style" : {
+				"navigationBarTitleText": "我的收藏",
+				"navigationBarBackgroundColor":"#f06c7a",
+				"navigationBarTextStyle":"white",
+				"app-plus":{
+					"bounce":"none"
+				}
+			}
+        }
+		,{
+		    "path" : "pages/user/integral/integral",//10.09新增我的积分页面
+		    "style" : {
+				"navigationBarTitleText": "我的积分",
+				"navigationBarBackgroundColor":"#f06c7a",
+				"navigationBarTextStyle":"white",
+				"app-plus":{
+					"bounce":"none"
+				}
+			}
+		}
+		,{
+		    "path" : "pages/user/service/service",//10.10新增售后查询页面
+		    "style" : {
+				"navigationBarTitleText": "售后服务",
+				"navigationBarBackgroundColor":"#FFD845",
+				"navigationBarTextStyle":"white",
+				"app-plus":{
+					"bounce":"none"
+				}
+			}
+		}
+		,{
+		    "path" : "pages/user/checkin/checkin",//10.10新增签到页面
+		    "style" : {
+				"navigationBarTitleText": "签到",
+				"navigationBarBackgroundColor":"#f06c7a",
+				"navigationBarTextStyle":"white",
+				"app-plus":{
+					"bounce":"none"
+				}
+			}
+		}
+		,{
+		    "path" : "pages/user/task/task",//10.10新增任务页面
+		    "style" : {
+				"navigationBarTitleText": "我的任务",
+				"navigationBarBackgroundColor":"#f06c7a",
+				"navigationBarTextStyle":"white",
+				"app-plus":{
+					"bounce":"none"
+				}
+			}
+		},
+		// 【申请校园代理】
+		{
+		    "path" : "pages/user/school/school",//10.10新增校园代理
+		    "style" : {
+				"navigationBarTitleText": "申请校园代理",
+				"navigationBarBackgroundColor":"#FFD845",
+				"navigationBarTextStyle":"white",
+				"app-plus":{
+					"bounce":"none"
+					
+				}
+			}
+		},
+		// 【校园代理审核中】
+		{
+		    "path" : "pages/user/school/checking",
+		    "style" : {
+				"navigationBarTitleText": "审核中",
+				"navigationBarBackgroundColor":"#FFD845",
+				"navigationBarTextStyle":"white",
+				"app-plus":{
+					"bounce":"none"
+				}
+			}
+		},
+		// 【校园代理审核通过】
+		{
+		    "path" : "pages/user/school/getApproved",
+		    "style" : {
+				"navigationBarTitleText": "审核通过",
+				"navigationBarBackgroundColor":"#FFD845",
+				"navigationBarTextStyle":"white",
+				"app-plus":{
+					"bounce":"none"
+				}
+			}
+		},
+		// 【校园代理审核未通过】
+		{
+		    "path" : "pages/user/school/unapproved",
+		    "style" : {
+				"navigationBarTitleText": "审核未通过",
+				"navigationBarBackgroundColor":"#FFD845",
+				"navigationBarTextStyle":"white",
+				"app-plus":{
+					"bounce":"none"
+				}
+			}
+		}
+        ,{
+            "path" : "pages/user/address/address",
+            "style" : {
+				"navigationBarBackgroundColor":"#FFD845",
+				"navigationBarTitleText":"地址管理",
+				"backgroundColorTop":"#ffffff",
+				"backgroundColorBottom":"#ffffff",
+				"navigationBarTextStyle":"white"
+			}
+        }
+        ,{
+            "path" : "pages/user/address/edit/edit",
+            "style" : {
+				"navigationBarBackgroundColor":"#FFD845",
+				"navigationBarTitleText":"编辑收件人地址",
+				"backgroundColorTop":"#ffffff",
+				"backgroundColorBottom":"#ffffff",
+				"navigationBarTextStyle":"white"
+			}
+        }
+        ,{
+            "path" : "pages/user/deposit/deposit",
+            "style" : {
+				"navigationBarBackgroundColor":"#ffffff",
+				"navigationBarTitleText":"充值",
+				"backgroundColorTop":"#ffffff",
+				"backgroundColorBottom":"#ffffff"
+			}
+        }
+        ,{
+            "path" : "pages/pay/payment/payment",
+            "style" : {
+				"navigationBarBackgroundColor":"#ffffff",
+				"navigationBarTitleText":"订单支付",
+				"backgroundColorTop":"#ffffff",
+				"backgroundColorBottom":"#ffffff"
+			}
+        }
+        ,{
+            "path" : "pages/pay/success/success",
+            "style" : {
+				"navigationBarBackgroundColor":"#ffffff",
+				"navigationBarTitleText":"支付成功",
+				"backgroundColorTop":"#ffffff",
+				"backgroundColorBottom":"#ffffff"
+			}
+        },
+		//【评论列表】
+        {
+            "path" : "pages/goods/ratings/ratings",
+            "style" : {
+				"navigationBarTitleText":"商品评论",
+				"enablePullDownRefresh": true,
+				"onReachBottomDistance":50,
+				"backgroundColorTop":"#ffffff",
+				"backgroundColorBottom":"#ffffff"
+			}
+        },
+		//【添加评论】
+		{
+		    "path" : "pages/goods/ratings/writeRating",
+		    "style" : {
+				"navigationBarBackgroundColor":"#FAF9F9",
+				"navigationBarTitleText":"发表评论",
+				"enablePullDownRefresh": true,
+				"onReachBottomDistance":50,
+				"backgroundColorTop":"#ffffff",
+				"backgroundColorBottom":"#ffffff"
+			}
+		},
+		// 注册评估页面
+		{
+		    "path" : "pages/evaluate/evaluate",
+		    "style" : {
+				"navigationBarTitleText" : "免费评估",
+				"navigationBarBackgroundColor":"#f1f1f1",
+				"onReachBottomDistance":50,
+				"h5":{
+					"titleNView":false
+				},
+				"app-plus": {
+					"titleNView": false ,//禁用原生导航栏
+					"bounce":"none"
+				}
+			}
+		},
+		// 注册填写评估信息页面
+		{
+		    "path" : "pages/evaluate/writeEvaluateInfo",
+		    "style" : {
+				"navigationBarTitleText" : "免费评估",
+				"navigationBarBackgroundColor":"#f1f1f1",
+				"onReachBottomDistance":50,
+				"h5":{
+					"titleNView":false
+				},
+				"app-plus": {
+					"titleNView": false ,//禁用原生导航栏
+					"bounce":"none"
+				}
+			}
+		},
+		// 注册填写"评估结果"
+		{
+		    "path" : "pages/evaluate/evaluateResult",
+		    "style" : {
+				"navigationBarTitleText" : "评估结果",
+				"navigationBarBackgroundColor":"#f1f1f1",
+				"onReachBottomDistance":50,
+				"h5":{
+					"titleNView":false
+				},
+				"app-plus": {
+					"titleNView": true ,//禁用原生导航栏
+					"bounce":"none"
+				}
+			}
+		},
+		// 注册填写"预约服务人员"页面
+		{
+		    "path" : "pages/evaluate/bookingServiceStaff",
+		    "style" : {
+				"navigationBarTitleText" : "预约服务人员",
+				"navigationBarBackgroundColor":"#FFD845",
+				"backgroundColorTop":"#ffffff",
+				// "backgroundColorBottom":"#ffffff",
+				"onReachBottomDistance":50,
+				"h5":{
+					"titleNView":true
+				},
+				"app-plus": {
+					"titleNView": true ,//禁用原生导航栏
+					"bounce":"none"
+				}
+			}
+		},
+		// 注册填写"预约时间"页面
+		{
+		    "path" : "pages/evaluate/bookingTime",
+		    "style" : {
+				"navigationBarTitleText" : "预约时间",
+				"navigationBarBackgroundColor":"#FFD845",
+				"backgroundColorTop":"#ffffff",
+				// "backgroundColorBottom":"#ffffff",
+				"onReachBottomDistance":50,
+				"h5":{
+					"titleNView":true
+				},
+				"app-plus": {
+					"titleNView": true ,//禁用原生导航栏
+					"bounce":"none"
+				}
+			}
+		},
+		// 【确认订单】
+		{
+		    "path" : "pages/evaluate/checkOrder",
+		    "style" : {
+				"navigationBarTitleText" : "确认订单",
+				"navigationBarBackgroundColor":"#F3F3F3",
+				"backgroundColorTop":"#000",
+				// "backgroundColorBottom":"#ffffff",
+				"onReachBottomDistance":50,
+				"h5":{
+					"titleNView": true
+				},
+				"app-plus": {
+					"titleNView": true ,//禁用原生导航栏
+					"bounce":"none"
+				}
+			}
+		},
+		// 注册填写"订单详情"页面
+		{
+		    "path" : "pages/evaluate/orderInfo",
+		    "style" : {
+				"navigationBarTitleText" : "订单详情",
+				"navigationBarBackgroundColor":"#F3F3F3",
+				"backgroundColorTop":"#ffffff",
+				// "backgroundColorBottom":"#ffffff",
+				"onReachBottomDistance":50,
+				"h5":{
+					"titleNView":true
+				},
+				"app-plus": {
+					"titleNView": true ,//禁用原生导航栏
+					"bounce":"none"
+				}
+			}
+		},
+		// 注册填写"测试"页面
+		{
+		    "path" : "pages/evaluate/test",
+		    "style" : {
+				"navigationBarTitleText" : "测试",
+				"navigationBarBackgroundColor":"#35A6E0",
+				"backgroundColorTop":"#ffffff",
+				// "backgroundColorBottom":"#ffffff",
+				"onReachBottomDistance":50,
+				"h5":{
+					"titleNView":false
+				},
+				"app-plus": {
+					"titleNView": false ,//禁用原生导航栏
+					"bounce":"none"
+				}
+			}
+		},
+		
+		
+		// 【代取快递模块】
+        // 注册填写"代取快递"信息页面
+        {
+            "path" : "pages/help/writeHelpInfo",
+            "style" : {
+        		"navigationBarTitleText" : "填写收件人信息",
+        		"navigationBarBackgroundColor":"#FFD845",
+        		"onReachBottomDistance":50,
+        		"h5":{
+        			"titleNView": true
+        		},
+        		"app-plus": {
+        			"titleNView": true ,//禁用原生导航栏
+        			"bounce":"none"
+        		}
+        	}
+        },
+        // 注册填写"订单详情"
+        {
+            "path" : "pages/help/helpInfo",
+            "style" : {
+        		"navigationBarTitleText" : "订单详情",
+        		"navigationBarBackgroundColor":"#f1f1f1",
+        		"onReachBottomDistance":50,
+        		"h5":{
+        			"titleNView": true
+        		},
+        		"app-plus": {
+        			"titleNView": true ,//禁用原生导航栏
+        			"bounce":"none"
+        		}
+        	}
+        },
+		
+        // 注册填写"我的代取"页面
+        {
+            "path" : "pages/help/myHelp",
+            "style" : {
+        		"navigationBarTitleText" : "我的代取",
+        		"navigationBarBackgroundColor":"#f8f8f8",
+        		"backgroundColorTop":"#ffffff",
+        		// "backgroundColorBottom":"#ffffff",
+        		"onReachBottomDistance":50,
+        		"h5":{
+        			"titleNView":true
+        		},
+        		"app-plus": {
+        			"titleNView": true ,//禁用原生导航栏
+        			"bounce":"none"
+        		}
+        	}
+        },
+		// 注册填写"确认支付"页面
+		{
+		    "path" : "pages/help/pay",
+		    "style" : {
+				"navigationBarTitleText" : "确认订单",
+				"navigationBarBackgroundColor":"#FFD845",
+				"backgroundColorTop":"#ffffff",
+				"onReachBottomDistance":50,
+				"h5":{
+					"titleNView":true
+				},
+				"app-plus": {
+					"titleNView": true ,//禁用原生导航栏
+					"bounce":"none"
+				}
+			}
+		},
+		// 注册关于页面
+        {
+            "path" : "pages/guanyu/guanyu",
+            "style" : {
+            	"navigationBarTitleText" : "关于",
+            	"navigationBarBackgroundColor":"#FFFFFF",
+            	"backgroundColorTop":"#ffffff",
+            	"onReachBottomDistance":50,
+            	"h5":{
+            		"titleNView":true
+            	},
+            	"app-plus": {
+            		"titleNView": true ,//禁用原生导航栏
+            		"bounce":"none"
+            	}
+            }
+        },
+		// 注册关于页面-->使用帮助
+		{
+		    "path" : "pages/guanyu/help",
+		    "style" : {
+		    	"navigationBarTitleText" : "使用帮助",
+		    	"navigationBarBackgroundColor":"#f1f1f1",
+		    	"backgroundColorTop":"#ffffff",
+		    	"onReachBottomDistance":50,
+		    	"h5":{
+		    		"titleNView":true
+		    	},
+		    	"app-plus": {
+		    		"titleNView": true ,//禁用原生导航栏
+		    		"bounce":"none"
+		    	}
+		    }
+		},
+		// 注册关于页面-->特别声明
+		{
+		    "path" : "pages/guanyu/announce",
+		    "style" : {
+		    	"navigationBarTitleText" : "特别声明",
+		    	"navigationBarBackgroundColor":"#f1f1f1",
+		    	"backgroundColorTop":"#ffffff",
+		    	"onReachBottomDistance":50,
+		    	"h5":{
+		    		"titleNView":true
+		    	},
+		    	"app-plus": {
+		    		"titleNView": true ,//禁用原生导航栏
+		    		"bounce":"none"
+		    	}
+		    }
+		},
+		// 【充值】页面
+		{
+		    "path" : "pages/recharge/recharge",
+		    "style" : {
+				"navigationBarTitleText" : "充值",
+				"navigationBarBackgroundColor":"#F3F3F3",
+				"backgroundColorTop":"#ffffff",
+				"onReachBottomDistance":50,
+				"h5":{
+					"titleNView":true
+				},
+				"app-plus": {
+					"titleNView": true ,//禁用原生导航栏
+					"bounce":"none"
+				}
+			}
+		},
+		// 【充值成功】页面
+		{
+		    "path" : "pages/recharge/successRecharge",
+		    "style" : {
+				"navigationBarTitleText" : "充值成功",
+				"navigationBarBackgroundColor":"#F3F3F3",
+				"backgroundColorTop":"#ffffff",
+				"onReachBottomDistance":50,
+				"h5":{
+					"titleNView":true
+				},
+				"app-plus": {
+					"titleNView": true ,//禁用原生导航栏
+					"bounce":"none"
+				}
+			}
+		}
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText" : "",
+		"navigationBarBackgroundColor" : "#ffffff",
+		"backgroundColor" : "#ffffff",
+		"backgroundColorTop":"#ffffff",
+		"backgroundColorBottom":"#ffffff"
+	},
+	"tabBar": {
+		"color": "#333333",
+		"selectedColor": "#FE564B",
+		"borderStyle": "black",
+		"backgroundColor": "#ffffff",
+		"list": [{
+				"pagePath": "pages/tabBar/home/home",
+				"iconPath": "static/img/tabBar/11.png",
+				"selectedIconPath": "static/img/tabBar/1.png",
+				"text": "首页"
+			},
+			{
+				"pagePath": "pages/tabBar/category/category",
+				"iconPath": "static/img/tabBar/44.png",
+				"selectedIconPath": "static/img/tabBar/4.png",
+				"text": "分类"
+			},
+			// {
+			// 	"pagePath": "pages/tabBar/moniter/moniter",
+			// 	"iconPath": "static/img/tabBar/22.png",
+			// 	"selectedIconPath": "static/img/tabBar/2.png",
+			// 	"text": "验机"
+			// },
+			// {
+			// 	"pagePath": "pages/tabBar/cart/cart",
+			// 	"iconPath": "static/img/tabBar/33.png",
+			// 	"selectedIconPath": "static/img/tabBar/3.png",
+			// 	"text": "购物车"
+				
+			// },
+			{
+				"pagePath": "pages/tabBar/user/user",
+				"iconPath": "static/img/tabBar/55.png",
+				"selectedIconPath": "static/img/tabBar/5.png",
+				"text": "我的"
+			}
+		]
+	},
+	"condition" : { //模式配置，仅开发期间生效
+		"current": 0, //当前激活的模式(list 的索引项)
+		"list": [
+			{
+				"name": "", //模式名称
+				"path": "", //启动页面，必选
+				"query": "" //启动参数，在页面的onLoad函数里面得到
+			}
+		]
+	}
+}

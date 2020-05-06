@@ -1,0 +1,21 @@
+
+.footer.data-v-0229b4a4 {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	        justify-content: center;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	        flex-direction: column;
+	margin: 40rpx auto 0;
+}
+.footer .repair.data-v-0229b4a4 {
+	margin: 20rpx auto 0;
+	padding: 20rpx 50rpx;
+	border: 1px solid #ccc;
+	border-radius: 10rpx;
+}
+

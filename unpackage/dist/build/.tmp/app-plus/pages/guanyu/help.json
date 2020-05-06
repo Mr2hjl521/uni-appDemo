@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "使用帮助",
+  "navigationBarBackgroundColor": "#f1f1f1",
+  "backgroundColorTop": "#ffffff",
+  "onReachBottomDistance": 50,
+  "titleNView": true,
+  "bounce": "none",
+  "usingComponents": {}
+}

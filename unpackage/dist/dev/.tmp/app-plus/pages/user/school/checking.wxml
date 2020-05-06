@@ -1,0 +1,1 @@
+<view class="container"><view class="head"><view class="box1"><image class="pic _img" src="/static/img/shenhe2.png"></image></view><view class="box2"><view>审核中</view><view class="title">我们已收到了您的申请，请耐心等待我们的工作人员审核</view><view data-event-opts="{{[['tap',[['goHome']]]]}}" class="backbtn" bindtap="__e">回首页</view></view></view></view>

@@ -1,0 +1,2 @@
+setCssToHead([".",[1],"all{ height: 100%; width: 100%; }\n.",[1],"txt{ margin: 0 auto; }\n",],undefined,{path:"./pages/user/phone/phone.wxss"})();
+document.dispatchEvent(new CustomEvent("generateFuncReady", { detail: { generateFunc: $gwx('./pages/user/phone/phone.wxml') } }));

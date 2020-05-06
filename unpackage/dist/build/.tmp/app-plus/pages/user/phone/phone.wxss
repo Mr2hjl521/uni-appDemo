@@ -1,0 +1,10 @@
+
+.all{
+	height: 100%;
+	width: 100%;
+}
+.txt{
+	margin: 0 auto;
+}
+
+

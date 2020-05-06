@@ -1,0 +1,2 @@
+setCssToHead(["@charset \x22UTF-8\x22;\n.",[1],"msg { background-color: #fff; width: 100%; height: 200px; line-height: 200px; text-align: center; margin-top: 50%; }\n",],undefined,{path:"./pages/tabBar/moniter/moniter.wxss"})();
+document.dispatchEvent(new CustomEvent("generateFuncReady", { detail: { generateFunc: $gwx('./pages/tabBar/moniter/moniter.wxml') } }));

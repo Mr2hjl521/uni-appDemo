@@ -1,0 +1,10 @@
+{
+  "navigationBarBackgroundColor": "#FFD845",
+  "navigationBarTitleText": "编辑收件人地址",
+  "backgroundColorTop": "#ffffff",
+  "backgroundColorBottom": "#ffffff",
+  "navigationBarTextStyle": "white",
+  "usingComponents": {
+    "mpvue-picker": "/components/mpvue-picker/mpvuePicker"
+  }
+}

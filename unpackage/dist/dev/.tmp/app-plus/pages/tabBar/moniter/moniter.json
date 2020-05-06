@@ -1,0 +1,7 @@
+{
+  "enablePullDownRefresh": true,
+  "navigationBarTextStyle": "black",
+  "titleNView": false,
+  "bounce": "none",
+  "usingComponents": {}
+}

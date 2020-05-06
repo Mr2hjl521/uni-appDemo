@@ -1,0 +1,2 @@
+setCssToHead(["@charset \x22UTF-8\x22;\nbody { box-sizing: border-box; }\n.",[1],"container { height: 100%; box-sizing: border-box; }\n.",[1],"container .",[1],"msg { box-sizing: border-box; height: 200px; width: 100%; text-align: center; padding: 20px; }\n",],undefined,{path:"./pages/guanyu/announce.wxss"})();
+document.dispatchEvent(new CustomEvent("generateFuncReady", { detail: { generateFunc: $gwx('./pages/guanyu/announce.wxml') } }));

@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "评估结果",
+  "navigationBarBackgroundColor": "#f1f1f1",
+  "onReachBottomDistance": 50,
+  "titleNView": true,
+  "bounce": "none",
+  "usingComponents": {}
+}

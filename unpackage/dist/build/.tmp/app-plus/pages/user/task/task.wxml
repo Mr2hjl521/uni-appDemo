@@ -1,0 +1,1 @@
+<view class="task"><view class="head"><image src="../../../static/img/task.png" mode></image></view><view class="list"><block wx:for="{{task}}" wx:for-item="item" wx:for-index="index"><view class="listson"><view class="title">{{''+item.title+''}}</view><view class="content">{{''+item.content+''}}</view><button class="btn" type="primary">去完成</button></view></block></view></view>

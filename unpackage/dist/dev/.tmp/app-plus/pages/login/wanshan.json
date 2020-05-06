@@ -1,0 +1,12 @@
+{
+  "navigationBarTitleText": "完善信息",
+  "navigationBarBackgroundColor": "#f4f4f4",
+  "navigationBarTextStyle": "black",
+  "titleNView": true,
+  "bounce": "none",
+  "softinputNavBar": "none",
+  "usingComponents": {
+    "sunui-upbasic": "/components/sunui-upimg/sunui-upimg-basic",
+    "mpvue-picker": "/components/mpvue-picker/mpvuePicker"
+  }
+}

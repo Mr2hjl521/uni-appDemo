@@ -1,0 +1,11 @@
+{
+  "navigationBarBackgroundColor": "#FAF9F9",
+  "navigationBarTitleText": "发表评论",
+  "enablePullDownRefresh": true,
+  "onReachBottomDistance": 50,
+  "backgroundColorTop": "#ffffff",
+  "backgroundColorBottom": "#ffffff",
+  "usingComponents": {
+    "uni-rate": "/components/uni-rate/uni-rate"
+  }
+}

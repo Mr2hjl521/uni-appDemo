@@ -1,0 +1,11 @@
+{
+  "navigationBarTitleText": "编辑资料",
+  "navigationBarBackgroundColor": "#F4F4F4",
+  "onReachBottomDistance": 50,
+  "titleNView": true,
+  "bounce": "none",
+  "usingComponents": {
+    "sunui-upbasic": "/components/sunui-upimg/sunui-upimg-basic",
+    "mpvue-picker": "/components/mpvue-picker/mpvuePicker"
+  }
+}

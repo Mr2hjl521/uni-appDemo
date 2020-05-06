@@ -1,0 +1,149 @@
+<template>
+	<view class="content" :style="{height:statusBarHeight+44+'wx'}">
+		<view class="status-bar" :style="{height:statusBarHeight+'wx'}"></view>
+		<view class="nav">
+			<!-- <text class="icon location">{{ iconLocation }}</text>
+			<text class="location-city-text">{{ city }}</text> -->
+			<view class="input-box" @tap="police()">
+				<input class="input-box-input" placeholder="默认关键字" disabled="disabled" @tap="close()"/>
+				<text class="icon search">{{ iconSearch }}</text>
+			</view>
+			<!-- <text class="icon yuyin">{{ iconYuyin }}</text> -->
+			<text @click="toMsg" class="icon tongzhi">{{ iconTongzhi }}</text>
+		</view>
+	</view>
+</template>
+<script>
+export default {
+	data() {
+		return {
+			city: '',
+			subNVue: uni.getCurrentSubNVue(),
+			iconSearch: '\ue628',
+			iconLocation: '\ue611',
+			iconYuyin: '\ue64e',
+			iconTongzhi: '\ue729',
+			statusBarHeight:20
+		};
+	},
+	beforeCreate() {
+		const domModule = weex.requireModule('dom');
+		domModule.addRule('fontFace', {
+			fontFamily: 'iconfont',
+			src: "url('https://at.alicdn.com/t/font_1087442_fe5vigfwr5m.ttf')"
+		});
+	},
+	mounted() {
+		this.init();
+	},
+	methods: {
+		close() {
+			uni.hideKeyboard(); 
+		},
+		police() {
+			// uni.showToast({ title: '敬请期待',icon:'none' });
+		},
+		toMsg() {
+			// uni.showToast({ title: '敬请期待',icon:'none' });
+			// uni.navigateTo({
+			// 	url: '../../msg/msg'
+			// });
+		},
+		init() {
+			uni.getSystemInfo({
+				// success: (res)=>{
+				// 	this.statusBarHeight = res.statusBarHeight;
+				// }
+			});
+			this.nVueTitle = uni.getCurrentSubNVue();
+			this.nVueTitle.onMessage(res => {
+				// let type = res.data.type;
+				// switch (type) {
+				// 	case 'location':
+				// 		this.setCity(res.data.city);
+				// 		break;
+				// 	default:
+				// 		break;
+				// }
+			});
+		},
+		setCity(city) {
+			// this.city = city;
+		},
+		inputfocus() {
+			// this.subNVue.postMessage({
+			// 	type: 'focus'
+			// });
+		}
+	}
+};
+</script>
+<style>
+.icon {
+	font-family: iconfont;
+	font-size: 42px;
+}
+.content {
+	flex-direction: column;
+	margin-top: 48px;
+	padding-bottom: 10px;
+}
+.status-bar {
+	flex: 1;
+}
+
+.nav {
+	width: 750px;
+	/* padding: 0 5px; */
+	padding-bottom: 5px;
+	position: relative;
+	/* height: 9px; */
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 10px;
+	/* background-color: pink; */
+	
+}
+.location,
+.yuyin,
+.tongzhi {
+	width: 60px;
+	height: 88px;
+	text-align: center;
+	line-height: 88px;
+}
+
+.yuyin {
+	color: #000;
+}
+.tongzhi {
+	color: #000;
+}
+.input-box {
+	padding-left: 10px;
+	width: 650px;
+	/* margin-left: 5px; */
+	height: 60upx;
+	border-radius: 60px;
+	background-color: #f5f5f5;
+	position: relative;
+	flex-direction: row;
+	justify-content: space-between;
+	
+}
+.input-box-input {
+	width: 330px;
+	padding-top: 5px;
+	/* height: 60px; */
+	font-size: 18px;
+	/* margin-left: 20px; */
+	/* placeholder-color: #c0c0c0;  */
+}
+.search {
+	width: 60px;
+	font-size: 34px;
+	padding-right: 30px;
+	color: #c0c0c0;
+}
+</style>

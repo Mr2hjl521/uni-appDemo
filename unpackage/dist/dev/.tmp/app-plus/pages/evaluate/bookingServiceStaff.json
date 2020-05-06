@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "预约服务人员",
+  "navigationBarBackgroundColor": "#FFD845",
+  "backgroundColorTop": "#ffffff",
+  "onReachBottomDistance": 50,
+  "titleNView": true,
+  "bounce": "none",
+  "usingComponents": {}
+}

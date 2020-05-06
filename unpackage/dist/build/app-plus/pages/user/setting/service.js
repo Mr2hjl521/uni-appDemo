@@ -1,0 +1,2 @@
+setCssToHead(["#icon-p { width: 100%; height: 30px; text-align: center; margin-bottom: 15px; margin-top: 10px; }\n.",[1],"_p { font-size: 18px; }\n",],"Some selectors are not allowed in component wxss, including tag name selectors, ID selectors, and attribute selectors.(./pages/user/setting/service.wxss:2:1)",{path:"./pages/user/setting/service.wxss"})();
+document.dispatchEvent(new CustomEvent("generateFuncReady", { detail: { generateFunc: $gwx('./pages/user/setting/service.wxml') } }));
